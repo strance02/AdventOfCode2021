@@ -1,0 +1,14 @@
+#fetching input
+with open('puzzle1_input.txt') as f:
+	data=[int(line) for line in f.readlines()]
+
+#counting the number of increases
+count=0
+i=-1
+for num in data:
+	if i!=-1:
+		if num > data[i]:
+			count+=1
+	i+=1
+
+print(count)
