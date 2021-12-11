@@ -65,5 +65,6 @@ while sync==False:
 				if(data[index][pos]!=0):
 					sync=False
 	x+=1
-
+	if x==100:
+		print(count)
 print(x)
